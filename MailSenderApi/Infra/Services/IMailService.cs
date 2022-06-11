@@ -1,8 +1,7 @@
 ﻿
-namespace MailSenderApi.Infra.Services
+namespace MailSenderApi.Infra.Services;
+
+public interface IMailService
 {
-    public interface IMailService
-    {
-        void SendMail(string[] emails, string subject, string body, bool isHtml = false);
-    }
+    void SendMail(string[] emails, string subject, string body, bool isHtml = false);
 }
